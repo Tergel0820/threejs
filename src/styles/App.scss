@@ -1,0 +1,16 @@
+.word {
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-shadow: 0 0 5px #fff;
+  &-con {
+    position: absolute;
+    top: 64px;
+    left: 64px;
+  }
+  &-1 {
+    top: 48px;
+  }
+}
