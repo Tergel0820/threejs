@@ -1,16 +1,35 @@
+$primary: #7858a6;
+$secondary: #5b4b8a;
+$tertiary: #4c3575;
+$quaternary: #371b58;
+
 .word {
   position: absolute;
   z-index: 2;
-  color: #fff;
+  color: $primary;
   margin: 0;
   padding: 0;
-  text-shadow: 0 0 5px #fff;
+  text-shadow: 0 0 5px $primary;
   &-con {
     position: absolute;
     top: 64px;
     left: 64px;
   }
   &-1 {
-    top: 48px;
+    animation: word1 1.5s linear;
+  }
+}
+
+@keyframes word1 {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    top: -20px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
   }
 }
